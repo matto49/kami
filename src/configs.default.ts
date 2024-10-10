@@ -111,10 +111,10 @@ export const defaultConfigs = {
         content: 'Stay hungry. Stay foolish.',
         author: 'Steve Jobs',
       },
-      icp: {
-        enable: false,
-        label: '萌备 20201212 号',
-        link: 'https://icp.gov.moe/',
+      icp:{
+        enable: true,
+        label: '赣ICP备2022001149号-1',
+        link: 'https://beian.miit.gov.cn'
       },
       navigation: [
         {
