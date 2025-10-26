@@ -7,6 +7,9 @@ on:
   push:
     branches:
       - '**'
+    paths-ignore:
+      - README.md
+      - LICENSE
   pull_request:
     branches: [master]
 
@@ -16,10 +19,10 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [20.x]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -41,13 +44,13 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
-      - uses: pnpm/action-setup@v2.2.4
+      - uses: pnpm/action-setup@v3
         with:
-          version: 8.x.x
+          version: latest
           run_install: true
       - name: Build project
         run: |
-          yarn build
-          yarn lint
+          pnpm build
+          pnpm lint
         env:
           CI: true

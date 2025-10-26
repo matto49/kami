@@ -1,8 +1,23 @@
-# Kami.
+# Kami. (Compatible Plan)
+
+> [!WARNING]  
+> 仅有兼容计划，不会有任何新功能，仅仅是为了保持 Kami 的运行。会出现代码质量低下等问题。
+> 
+> **更推荐使用 [Shiro](https://github.com/Innei/Shiro) 以获得更好的体验。**
+
+<sup>如果你发现了 Kami 与 Core 的不兼容问题，请提交 issue 并描述具体问题，团队成员会尽快修复。</sup>
+
+---
+
+> [!WARNING]  
+> Next.js 14 已发布，Kami 即日起停止维护，请使用 [Shiro](https://github.com/Innei/Shiro) 以获得更好的体验。
 
 [![wakatime](https://wakatime.com/badge/github/mx-space/kami.svg)](https://wakatime.com/badge/github/mx-space/kami)
 
 **Kami is Sunsetting**, check here to read [more](#kami-is-sunsetting).
+
+> [!IMPORTANT]  
+> Next.js 13 低版本中存在内存泄露问题，在 [issue](https://github.com/vercel/next.js/issues/49929) 中，该 issue 表示已修复，但是由于 Node.js < 18.17.0 中可能存在漏内存问题，你也需要升级 Node.js 来解决这个问题。
 
 小小空间，大大梦想。
 
@@ -69,7 +84,7 @@ Live Demo:
 
 > 在此之前，请先完成部署 Mix Space
 
-参考[文档](https://mx-space.js.org/deploy/index.html#%E9%83%A8%E7%BD%B2-kami)
+参考[文档](https://mx-space.js.org/themes/kami)
 
 ## Clone
 
@@ -160,10 +175,6 @@ interface LinkCardProps {
 
 [配置项](https://mx-docs.shizuri.net/deploy/kami#%E6%9B%B4%E4%B8%BA%E8%AF%A6%E7%BB%86%E7%9A%84%E9%85%8D%E7%BD%AE%E9%A1%B9)
 
-## Discussion
-
-QQ 群：[615052447](https://jq.qq.com/?_wv=1027&k=5t9N0mw)
-
 ## Notice
 
 可以在此基础上保留署名进行二次创作，但是禁止用于以盈利为目的一切活动。
@@ -175,7 +186,6 @@ QQ 群：[615052447](https://jq.qq.com/?_wv=1027&k=5t9N0mw)
 ---
 
 风格参考于 [保罗的小窝](https://paul.ren)
-
 
 ## Kami is Sunsetting
 

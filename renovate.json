@@ -1,16 +1,13 @@
 {
   "extends": [
     "config:base",
-    "group:allNonMajor",
     ":automergePatch",
     ":automergeTesters",
     ":automergeLinters",
     ":rebaseStalePrs"
   ],
   "labels": ["dependencies"],
-  "pin": false,
   "rangeStrategy": "bump",
-  "node": false,
   "packageRules": [
     {
       "depTypeList": ["peerDependencies"],
@@ -21,5 +18,5 @@
       "labels": ["UPDATE-MAJOR"]
     }
   ],
-  "ignoreDeps": ["node", "framer-motion"]
+  "ignoreDeps": ["framer-motion"]
 }
