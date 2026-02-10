@@ -1,7 +1,7 @@
 name: kami
 
 site:
-  favicon: /favicon.svg
+  favicon: https://s3.bmp.ovh/2026/02/11/Ik3t1Etb.jpg
   # 开屏图 svg 标签，注意 XSS
   logo_svg: null
   # 随机图片
@@ -58,17 +58,19 @@ site:
         icon: faCircleNotch
         path: /favorite/music
         subMenu:
-          - title: 听歌
-            icon: faMusic
-            type: Music
-            path: /favorite/music
           - title: 项目
             icon: faFlask
             path: /projects
-      - title: ''
-        icon: faSubway
-        path: 'https://travellings.link'
-  social: []
+
+  social:
+    - url: 'https://github.com/matto49'
+      title: GitHub
+      icon: faGithub
+      color: var(--black)
+    - url: 'https://space.bilibili.com/357923745'
+      title: bilibili
+      icon: faBilibili
+      color: '#12b7f5'
 
   footer:
     background:
@@ -78,8 +80,7 @@ site:
       position: top/cover
     home_page: /
     motto:
-      content: Stay hungry. Stay foolish.
-      author: Steve Jobs
+      content: Ambitious.
     icp:
       enable: true
       label: '赣ICP备2022001149号-1'
@@ -92,15 +93,15 @@ site:
         path: '/message'
       - name: 友链
         path: '/friends'
-      - name: RSS 订阅
-        path: '/feed'
-        newtab: true
-      - name: 站点地图
-        path: '/sitemap'
-        newtab: true
-      - name: 开往
-        path: https://travellings.link/
-        newtab: true
+      # - name: RSS 订阅
+      #   path: '/feed'
+      #   newtab: true
+      # - name: 站点地图
+      #   path: '/sitemap'
+      #   newtab: true
+      # - name: 开往
+      #   path: https://travellings.link/
+      #   newtab: true
 
   custom:
     script: ''
@@ -123,9 +124,6 @@ page:
     more:
       - name: 点赞
         type: 'like'
-        cover:
-      - name: 订阅
-        type: 'subscribe'
         cover:
 
 function:
